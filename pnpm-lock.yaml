@@ -10,6 +10,9 @@ dependencies:
   '@nestjs/core':
     specifier: ^9.0.0
     version: 9.0.0(@nestjs/common@9.0.0)(@nestjs/platform-express@9.0.0)(reflect-metadata@0.1.13)(rxjs@7.2.0)
+  '@nestjs/mapped-types':
+    specifier: ^1.2.2
+    version: 1.2.2(@nestjs/common@9.0.0)(reflect-metadata@0.1.13)
   '@nestjs/mongoose':
     specifier: ^9.2.2
     version: 9.2.2(@nestjs/common@9.0.0)(@nestjs/core@9.0.0)(mongoose@7.1.1)(reflect-metadata@0.1.13)(rxjs@7.2.0)
@@ -905,6 +908,23 @@ packages:
       uuid: 8.3.2
     transitivePeerDependencies:
       - encoding
+
+  /@nestjs/mapped-types@1.2.2(@nestjs/common@9.0.0)(reflect-metadata@0.1.13):
+    resolution: {integrity: sha512-3dHxLXs3M0GPiriAcCFFJQHoDFUuzTD5w6JDhE7TyfT89YKpe6tcCCIqOZWdXmt9AZjjK30RkHRSFF+QEnWFQg==}
+    peerDependencies:
+      '@nestjs/common': ^7.0.8 || ^8.0.0 || ^9.0.0
+      class-transformer: ^0.2.0 || ^0.3.0 || ^0.4.0 || ^0.5.0
+      class-validator: ^0.11.1 || ^0.12.0 || ^0.13.0 || ^0.14.0
+      reflect-metadata: ^0.1.12
+    peerDependenciesMeta:
+      class-transformer:
+        optional: true
+      class-validator:
+        optional: true
+    dependencies:
+      '@nestjs/common': 9.0.0(reflect-metadata@0.1.13)(rxjs@7.2.0)
+      reflect-metadata: 0.1.13
+    dev: false
 
   /@nestjs/mongoose@9.2.2(@nestjs/common@9.0.0)(@nestjs/core@9.0.0)(mongoose@7.1.1)(reflect-metadata@0.1.13)(rxjs@7.2.0):
     resolution: {integrity: sha512-szNuSUCwwbQSSeiTh8+tZ9fHV4nuzHwBDROb0hX0s7crwY15TunCfwyKbB2XjqkEQWUAasDeCBuKOJSL9N6tTg==}
